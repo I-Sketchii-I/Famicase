@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* ===================================================================
+ style info : コンテンツエリア関係 他
+
+fonts
+ 10px = 77%     11px = 85%     12px = 93%     13px = 100%
+ 14px = 108%    15px = 116%    16px = 123.1%  17px = 131%
+ 18px = 138.5%  19px = 146.5%  20px = 153.9%  21px = 161.6%
+ 22px = 167%    23px = 174%    24px = 182%    25px = 189%
+ 26px = 197%
+=================================================================== */
+
+/*----------------------------------------------------
+	共通
+----------------------------------------------------*/
+/* スクロールバーの有無によるズレ対策 */
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif; 
+	font-size:12px;
+	text-align:left;
+	margin:0;
+	padding:0;
+	width:100%;
+	-webkit-text-size-adjust: 100%;
+	background-image: url(../17/img/back_2017.jpg);
+	line-height: 1.5em;
+	letter-spacing:0.02em;
+}
+
+input, textarea {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/* for IE6 */
+* html body {
+	font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+* html input, * html textarea {
+	font-family: "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+}
+
+/* リンク
+----------------------------------------------------*/
+a {
+	color:#0066FF;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#FF00FF;
+	text-decoration:underline;
+}
+
+
+/* 汎用
+----------------------------------------------------*/
+/* clerfix */
+#contents:after {
+	content: "."; display: block; visibility: hidden; height: 0.1px; font-size: 0.1em; line-height: 0; clear: both;
+}
+
+/*----------------------------------------------------
+	#page（ページ全体）
+----------------------------------------------------*/
+#page {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 100%;
+	letter-spacing:0.02em;
+}

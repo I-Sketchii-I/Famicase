@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<title>My Famicase Exhibition, 2005-2016</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta property="og:site_name" content="MyFamicase Exhibition, 2005-2016" />
+<meta property="og:email" content="adrien.dufond@gmail.com" />
+<meta property="og:title" content="My Famicase Exhibition, 2005-2016" /> 
+<meta property="og:url" content="http://www.famicase.com/chronicle/" /> 
+<meta property="og:image" content="http://www.famicase.com/chronicle/media/img/preview/og-icon.png" /> 
+<meta property="og:description" content="幼少期をファミコンに育まれた様々な職種のクリエイターが、ファミカセのラベルをキャンバスにデザインする夢のファミカセ展です。" /> 
+<meta property="og:type" content="website" />
+<script type="text/javascript" src="common/js/swf/swfobject.js"></script>
+<script type="text/javascript" src="common/js/swf/swfaddress.js"></script>
+<script type="text/javascript" src="common/js/swf/swfmacmousewheel2.js"></script>
+<link rel="stylesheet" type="text/css" href="common/css/common.css" media="all" />
+</head>
+<body>
+<div id="website">
+	
+</div>
+<script type="text/javascript">
+	if((navigator.userAgent.match(/iPhone/i))||(navigator.userAgent.match(/iPod/i))){ window.location = "mobile/"; }
+	var focusInited = false;
+	function onFlashFocusHandler(){ if(focusInited) getMovie("main").flashFocusCallback(); }
+	function onFlashBlurHandler() { if(focusInited) getMovie("main").flashBlurCallback();  }
+	function initFlashFocusListeners() { focusInited = true; }
+	
+	var query = Math.floor(Math.random()*10000);
+	var vars = { initFolder:'./' };
+	var params = { bgcolor:'#ffffff', scale:'noScale', salign:'lt', allowFullScreen:'true', allowScriptAccess:'always', wmode:'direct' };
+	var attributes = { id:'main', name:'main' };
+	swfobject.embedSWF('main.swf?query='+query, 'website', '100%', '100%', '10.0.0', './swf/expressinstall.swf', vars, params, attributes);
+	if (swfmacmousewheel != null) { swfmacmousewheel.registerObject(attributes.id); };
+</script>
+</body>
+</html>

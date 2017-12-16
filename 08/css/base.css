@@ -1,0 +1,119 @@
+@charset "Shift_JIS";
+
+/* ページ全体
+---------------------------------------------------- */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+/* ヘッダ
+---------------------------------------------------- */
+#header-col{
+  margin: 0 auto;
+  width: 600px;
+}
+ 
+#header img {
+  vertical-align: bottom;
+}
+
+/* ナビゲーション
+---------------------------------------------------- */
+ul#navigation {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul#navigation li {
+  position: absolute;
+  top: -71px;
+  display: block;
+  width: 110px;
+  height: 71px;
+  margin: 0;
+  padding: 0;
+  text-indent: -9999px;
+}
+ul#navigation li#photo {
+	left: 468px;
+	background-image: url(../images/tab_p.gif);
+	background-repeat: no-repeat;
+}
+
+ul#navigation li#enter {
+	left: 468px;
+	background-image: url(../images/tab_f.gif);
+	background-repeat: no-repeat;
+}
+
+ul#navigation li#back {
+	left: 468px;
+	background-image: url(../images/tab_b.gif);
+	background-repeat: no-repeat;
+}
+
+ul#navigation a {
+  display: block;
+  width: 110px;
+  height: 71px;
+  text-decoration: none;
+}
+
+/* 見出し・リード
+---------------------------------------------------- */
+h1 {
+  position: absolute;
+  left: -999px;
+  width: 990px;
+}
+#lead-col {
+  border-top: 3px solid #b8a68a;
+  background: #e0d8cb;
+}
+#lead {
+	margin: 0;
+	padding: 0em;
+	width: 600px;
+	background-color: #000000;
+	background-image: url(../images/top_image.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	border-top-color: #000000;
+	height: 618px;
+}
+
+
+/* コンテンツ
+---------------------------------------------------- */
+#content-col {
+width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+#content {
+padding: 5px 0px 15px 15px;
+  margin: 0px 0px 0px 0px;
+  line-height: 76px;
+  color: #653818;
+  background: #ffffff;
+}
+#content img {
+  margin : 0px 0px 0px 0px;
+  vertical-align: bottom;
+}
+
+
+
+/* フッタ
+---------------------------------------------------- */
+#footer-col{
+  margin: 0 auto;
+  width: 600px;
+}
+ 
+#footer img {
+  vertical-align: bottom;
+}
